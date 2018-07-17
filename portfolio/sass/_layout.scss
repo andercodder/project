@@ -1,0 +1,22 @@
+//header
+.container{
+        max-width: 120rem;
+        margin:0 auto;
+        min-height: 50rem;
+
+}
+header{
+        background-image:linear-gradient(to right bottom, rgba($color-primary-dark, 0.7), rgba($color-primary-dark, 0.7)), url("../img/4.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-attachment: fixed;
+
+}
+
+/* .main{
+        display: flex;
+        justify-content: space-around;
+}
+ */
