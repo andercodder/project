@@ -1,45 +1,47 @@
 //font-family: 'Nunito Sans', sans-serif;
-$color-primary-light:#363636;       //#00BDD4; //#8e42ff //9641FF //3E3254 //1d0c37;
+$color-primary-light:#363636; //#00BDD4; //#8e42ff //9641FF //3E3254 //1d0c37;
 $color-primary-dark: #000;
 $color-dark-transparent:rgba(0, 0, 0, 0.575);
-$color-text:rgba(117,117,117,1);
+$color-text:rgba(117, 117, 117, 1);
 $color-white:#fff;
 $shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.384);
-$shadow-hover: 0 1rem 3rem rgba(0, 0, 0,.15);
+$shadow-hover: 0 1rem 3rem rgba(0, 0, 0, .15);
 $color-primary-dark-blue:rgba(0, 187, 212, 0.541);
-
-
-*{
+$color-text-black:#222222;
+* {
         margin: 0;
         padding: 0;
 }
+
 *,
 *::before,
-*::after{
+*::after {
         box-sizing: inherit;
 }
 
-html{
+html {
         box-sizing: border-box;
         font-size: 62.5%; //1rem = 10px (my target :10px; browser default :16px; 10/16=62.5%)
 }
-html,body{
-        font-family: 'Nunito Sans', sans-serif;
- //font-family: 'Playfair Display', serif;
- font-weight: 400;
- line-height: 1.6;
- font-size: 20px;
- text-rendering: optimizeLegibility;
- overflow-x:hidden;
 
+html,
+body {
+        font-family: 'Nunito Sans', sans-serif; //font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        line-height: 1.6;
+        font-size: 20px;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
 }
+
 #typed {
-      //  font-size: 3rem;
+        //  font-size: 3rem;
         font-weight: 250;
         font-size: 300%;
         word-spacing: .4rem;
         letter-spacing: .1rem;
 }
+
 /* h1,h2,h3{
         font-weight: 300;        
 }
@@ -54,3 +56,43 @@ h2{
 h3{
         font-size: 110%;
 } */
+
+@mixin heading {
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2.5rem 0 1.5rem 0;
+}
+
+@mixin icon-set {
+        fill: $color-primary-dark-blue;
+        width: 3rem;
+}
+
+@mixin link-visited {
+        color: $color-primary-dark-blue;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color, background-color, box-shadow .80s; //height: 3rem;
+        text-align: center;
+}
+
+@mixin hover-active {
+        color: rgba($color-white, 1.0); //border: 1px solid $color-primary-dark-blue;
+        background-color: $color-primary-dark-blue;
+        cursor: pointer;
+        box-shadow: $shadow-hover;
+}
+
+@mixin text {
+      //  width: 8rem;
+       // table-layout: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: .01rem;
+        color: $color-text-black;
+       // flex-wrap: wrap;
+        font-size: .8rem;
+       // text-align: center;
+}

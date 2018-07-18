@@ -131,11 +131,10 @@
                 &__list {
                         text-align: center;
                         list-style: none;
-                        margin: 0 4rem;
-                        margin-top: -6rem;
+                        margin: 2rem 4rem;
+                        margin-top: -1rem;
                         &-icon {
-                                fill: $color-primary-dark-blue;
-                                width: 3rem;
+                                @include icon-set;
                         }
                         &-description {
                                 margin-top: -2.5rem;
@@ -143,36 +142,22 @@
                         &-heading {
                                 align-items: center;
                                 color: $color-dark-transparent;
+                                margin-top: .5rem;
                         }
                         &-text {
+                                @include text;
                                 width: 8rem;
-                                table-layout: auto;
-                                display: flex;
-                                flex-direction: column;
-                                margin-top: .01rem;
-                                color: $color-text;
-                                flex-wrap: wrap;
-                                font-size: .8rem;
-                                text-align: center;
                                 & a {
                                         flex: 1;
                                         padding: .2rem;
                                 }
                                 & a:link,
                                 & a:visited {
-                                        color: $color-primary-dark-blue;
-                                        display: block;
-                                        text-decoration: none;
-                                        text-transform: uppercase;
-                                        transition: color, background-color, box-shadow .80s; //height: 3rem;
-                                        text-align: center;
+                                        @include link-visited;
                                 }
                                 & a:hover,
                                 & a:active {
-                                        color: rgba($color-white, 1.0); //border: 1px solid $color-primary-dark-blue;
-                                        background-color: $color-primary-dark-blue;
-                                        cursor: pointer;
-                                        box-shadow: $shadow-hover;
+                                        @include hover-active;
                                 }
                         }
                 }
@@ -182,7 +167,6 @@
 .project {
         padding-top: 4rem;
         text-align: center;
-        
         & h1:before {
                 //  content: "";
                 height: .2rem;
@@ -197,14 +181,10 @@
                 background-color: $color-primary-dark-blue;
                 width: 10%;
         }
-        &-heading{
-                margin: 4rem 0 1rem 0;
-                text-transform: uppercase;
+        &-heading {
+                @include heading;
         }
-
-        &-project-text{
-
-        }
+        &-project-text {}
         &-box {
                 display: flex;
                 justify-content: center;
@@ -227,51 +207,42 @@
 }
 
 //form
-
-.contact{
-        &-heading{
-                text-transform: uppercase;
-                text-align: center;
-                margin: 4rem 0 1rem 0;
+.contact {
+        &-heading {
+                @include heading;
         }
-
-        &-text{
+        &-text {
                 text-align: center;
-
         }
-
-        &-box{
+        &-box {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                align-items: center;               
-
-                
-
-                &__list{
+                //align-items: center;
+                &__list {
                         list-style: none;
-                        margin:0 4rem;
-                        margin-top: 1rem;
-
-                        &-icon{
-                                fill: $color-primary-dark-blue;
-                                width: 3rem;
-                      }
+                        margin: 1rem 6rem;                      
+                        
+                        &-icon {
+                                @include icon-set;
+                        }
                 }
         }
-
-        &-info{
-                width: 3rem;
+        &-info {
+                width: 4rem;
                 color: $color-text;
                 margin-top: -3rem;
-                text-align: center;
-                &__1{
-
+               // text-align: center;
+                &__1 {
+                      @include text;
+                     justify-content: center;
+                      align-items: center;
+                      margin-top: 1rem;
                 }
-                &__2{
-
+                &__2 {
+                        @include text;
+                        justify-content: center;
+                       align-items: center;
                 }
-               
         }
-
 }
