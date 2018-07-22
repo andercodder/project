@@ -206,8 +206,10 @@
         }
 }
 
-//form
-.contact {
+.info {
+        text-align: center;
+        width: 100%;
+
         &-heading {
                 @include heading;
         }
@@ -215,34 +217,75 @@
                 text-align: center;
         }
         &-box {
-                width: 100%;
                 display: flex;
                 justify-content: center;
-                //align-items: center;
+                margin-top: 1rem; //  width: 100%;
+        }
+        &-list {
+                list-style: none;
+                margin: 2.5rem 3rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &-box-icon {
+                        background-color: $color-primary-dark-blue; //background-size: 100%;
+                        width: 4rem;
+                        height: 4rem;
+                        display: flex;
+                        justify-content: center;
+                        align-self: center;
+                        border-radius: 0.5rem;
+                }
+                &-icon {
+                        //   background-color: $color-primary-dark-blue;
+                        @include icon-set;
+                        fill: #fff;
+                        width: 2rem;
+                        text-align: center;
+                }
+        }
+        &-list-description {
+                //width: 4rem;
+                color: $color-text; //  margin-top: -2.5rem;
+        }
+        &-list-heading {
+                @include text;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+        }
+        &-list-text {
+                @include text;
+                justify-content: center;
+                align-items: center;
+        }
+}
+
+//form
+/* .contact {
+        &-heading {}
+        &-text {
+                text-align: center;
+        }
+        &-box {
+                width: 100%;
+                display: flex;
+                justify-content: center; //align-items: center;
                 &__list {
-                        list-style: none;
-                        margin: 1rem 6rem;                      
-                        
-                        &-icon {
-                                @include icon-set;
-                        }
+                        &-icon {}
                 }
         }
         &-info {
-                width: 4rem;
-                color: $color-text;
-                margin-top: -3rem;
-               // text-align: center;
+                // text-align: center;
                 &__1 {
-                      @include text;
-                     justify-content: center;
-                      align-items: center;
-                      margin-top: 1rem;
-                }
-                &__2 {
                         @include text;
                         justify-content: center;
-                       align-items: center;
+                        align-items: center;
+                        margin-top: 1rem;
+                }
+                &__2 {
+                        
                 }
         }
-}
+} */
