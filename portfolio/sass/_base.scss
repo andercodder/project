@@ -1,12 +1,16 @@
 //font-family: 'Nunito Sans', sans-serif;
 $color-primary-light:#363636; //#00BDD4; //#8e42ff //9641FF //3E3254 //1d0c37;
 $color-primary-dark: #000;
+$color-primary-grey-dark: #ECE9E6;
+
 $color-dark-transparent:rgba(0, 0, 0, 0.575);
 $color-text:rgba(117, 117, 117, 1);
 $color-white:#fff;
 $shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.384);
 $shadow-hover: 0 1rem 3rem rgba(0, 0, 0, .15);
-$color-primary-dark-blue:rgba(6, 138, 175, 0.973); //rgba(0, 187, 212, 0.541);
+$color-error:#df293b;
+$color-primary-dark-blue:#2998ff;//rgba(6, 138, 175, 0.973); //rgba(0, 187, 212, 0.541);
+
 $color-text-black:#222222;
 * {
         margin: 0;
