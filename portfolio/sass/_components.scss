@@ -295,7 +295,7 @@
         }
         &__label {
                 font-size: .8rem;
-                font-weight: 100; 
+                font-weight: 100;
                 margin-top: 0;
                 margin-left: -60rem;
                 display: block;
@@ -305,51 +305,59 @@
                 opacity: 0;
                 visibility: hidden;
                 transform: translateY(-4rem);
-                
         }
 }
 
-.btn{
-        
-        & {
-                font-size: .9rem;
-                text-transform: uppercase;
-                text-decoration: none;
-                padding: 1rem 2rem;
+.btn:link,
+.btn:visited {
+        font-size: .9rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        &:hover {
+                transform: translateY(-3px);
+                box-shadow: $shadow-hover;
+        }
+        &:after {
+                
+                content: "";
                 display: inline-block;
-                border-radius: 5rem;
-                transition: all .8s;
-                position: relative;
-                border: none;
-                cursor: pointer;
-                margin-bottom:1rem; 
-                
-
-                 &:hover,
-                 {
-                         transform: translateY(-2px);
-                         box-shadow: $shadow-hover;
-                 }
-
-                 &:after {
-                         transform: scaleX(1.4) scaleY(1.6);
-                         opacity: 0;
-                 }
-
-                 &:active,
-                 &:focus {
-                         transform: translateY(-1px);
-                         box-shadow: $shadow-hover;
-                         outline: none;
-                 }
-
-                 &-default {
-                         background-color:$color-primary-dark-blue;
-                         color: $color-white; 
-                 }
-
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top:0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s
+        }
+        &:active,
+        &:focus {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);//$shadow-hover;
+                outline: none;
         }
        
+    }
 
-       
-}
+ .btn-default {
+         background-color: $color-primary-dark-blue;
+         color: $color-white;
+ }
+
+ .btn-default:after {
+         background-color: $color-primary-dark-blue;
+        
+ }
+
+   .btn:hover:after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+   }

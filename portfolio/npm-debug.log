@@ -1,5 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'compile', ':sass' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'compile', ':', 'sass' ]
 2 info using npm@3.10.10
 3 info using node@v6.14.3
 4 verbose stack Error: missing script: compile
@@ -15,7 +15,7 @@
 4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:444:12)
 5 verbose cwd /var/www/html/projects/portfolio
 6 error Linux 4.15.0-29-generic
-7 error argv "/usr/bin/node" "/usr/bin/npm" "run" "compile" ":sass"
+7 error argv "/usr/bin/node" "/usr/bin/npm" "run" "compile" ":" "sass"
 8 error node v6.14.3
 9 error npm  v3.10.10
 10 error missing script: compile
