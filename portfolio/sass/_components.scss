@@ -70,21 +70,23 @@
                         justify-content: center;
                         align-items: center;
                 }
-                .social-media {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        &__link {}
-                        &__icon {
-                                fill: $color-white;
-                                width: 2rem;
-                                margin: 1rem;
-                                transition: transform, fill 0.40s;
-                                &:hover {
-                                        transform: scaleY(1.05);
-                                        fill: $color-primary-dark-blue;
-                                }
-                        }
+        }
+}
+
+.social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__link {}
+        &__icon {
+                fill: $color-white;
+                width: 2rem;
+                margin: 1rem;
+                margin-bottom: 0;
+                transition: transform, fill 0.40s;
+                &:hover {
+                        transform: scaleY(1.05);
+                        fill: $color-primary-dark-blue;
                 }
         }
 }
@@ -93,14 +95,16 @@
 ///main class="main-about"
 .main {
         &-about {
-                margin: 8rem;
-                max-width: 100%;
+                margin-top: 8rem; 
+                //max-width: 100%;
+                padding: 2rem; 
+                 //min-width: 100%;
                 display: flex;
-                justify-items: left;
+                justify-content: center;
                 align-items: center;
                 font-family: inherit;
                 &__box {
-                        width: 100%;
+                        width: 45%;
                         margin: 2rem;
                         & h1:before {
                                 content: "";
@@ -109,6 +113,7 @@
                                 background-color: $color-primary-dark-blue;
                                 width: 10%;
                         }
+                       // @media only screen and (max-width:$bp-largest) {}
                 }
                 &__image {
                         width: 100%;
@@ -127,12 +132,15 @@
         &-skill {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 width: 100%;
+                
                 &__list {
                         text-align: center;
                         list-style: none;
-                        margin: 2rem 4rem;
-                        margin-top: -1rem;
+                        padding: 4rem 2rem;
+                       // padding-top: -1rem;
+                       
                         &-icon {
                                 @include icon-set;
                         }
@@ -188,7 +196,11 @@
         &-box {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 padding-top: 1.5rem;
+                @media only screen and (max-width:$bp-largest){
+                                flex-direction:column;
+                }
                 & img {
                         width: 22rem;
                         height: 22rem;
@@ -320,20 +332,20 @@
         position: relative;
         border: none;
         cursor: pointer;
+        margin-top: 1rem;
         margin-bottom: 2rem;
         &:hover {
                 transform: translateY(-3px);
                 box-shadow: $shadow-hover;
         }
         &:after {
-                
                 content: "";
                 display: inline-block;
                 height: 100%;
                 width: 100%;
                 border-radius: 100px;
                 position: absolute;
-                top:0;
+                top: 0;
                 left: 0;
                 z-index: -1;
                 transition: all .4s
@@ -341,23 +353,35 @@
         &:active,
         &:focus {
                 transform: translateY(-1px);
-                box-shadow: 0 5px 10px rgba(0,0,0,.2);//$shadow-hover;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, .2); //$shadow-hover;
                 outline: none;
         }
-       
-    }
+}
 
- .btn-default {
-         background-color: $color-primary-dark-blue;
-         color: $color-white;
- }
+.btn-default {
+        background-color: $color-primary-dark-blue;
+        color: $color-white;
+}
 
- .btn-default:after {
-         background-color: $color-primary-dark-blue;
-        
- }
+.btn-default:after {
+        background-color: $color-primary-dark-blue;
+}
 
-   .btn:hover:after {
+.btn:hover:after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
-   }
+} ///////////////////////////////////////////////////
+//footer
+.footer svg:hover {
+        transform: scaleY(1.05);
+        fill: $color-white;
+}
+
+footer p {
+        color: rgba(255, 255, 255, 0.671);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 50;
+}

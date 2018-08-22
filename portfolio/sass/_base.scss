@@ -12,6 +12,10 @@ $color-error:#df293b;
 $color-primary-dark-blue:#2998ff;//rgba(6, 138, 175, 0.973); //rgba(0, 187, 212, 0.541);
 
 $color-text-black:#222222;
+
+//BREAKPOINT
+$bp-largest:87.75em; //1404/16
+$bp-medium:69.75em;//1044px/16
 * {
         margin: 0;
         padding: 0;
@@ -36,6 +40,8 @@ body {
         font-size: 20px;
         text-rendering: optimizeLegibility;
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
         
 }
 
