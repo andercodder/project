@@ -22,7 +22,7 @@
                                                 <p class="main-nav__logo-text"></p>
                                         </li>
                                         <li>
-                                                <a href="#" class="main-nav__link">
+                                                <a href="#contacta-me" class="main-nav__link">
                                                         Contacta-me
                                                         <svg class="main-nav__icon">
                                                                 <use xlink:href="icon/sprite.svg#icon-envelope"></use>
@@ -30,14 +30,14 @@
 
                                                 </a>
                                         </li>
-                                        <li>
+                                    <!--     <li>
                                                 <a href="#" class="main-nav__link">
                                                         cv
                                                         <svg class="main-nav__icon">
                                                                 <use xlink:href="icon/sprite.svg#icon-search"></use>
                                                         </svg>
                                                 </a>
-                                        </li>
+                                        </li> -->
                                 </ul>
 
                         </nav>
@@ -45,11 +45,11 @@
                                 <p>Olá, Bem Vindo</p>
 
                                 <div id="typed-strings">
-                                        <h1>Eu sou o André</h1>
-                                        <h1>Sou web designer & Programador</h1>
-                                        <h1>Se precisar de uma pagina Web Contacta-me</h1>
+                                        <h1>Sou o André</h1>
+                                        <h1>Web Designer & Developer</h1>
+                                        <h1>O teu site, Eu Faço</h1>
                                         <h1>944783640
-                                                <br> 994783640</h1>
+                                        <br> 994783640</h1>
                                 </div>
                                 <span id="typed"></span>
                                 <div class="social-media">
@@ -83,11 +83,12 @@
                                                 </a>
                                         </div>
                                 </div>
+                
                         </div>
                 </header>
 
                 <main class="main">
-                        <div class="main-about">
+                        <div class="main-about js--main-about">
                                 <div class="main-about__box">
                                         <img src="img/my_image_body.jpg" class="main-about__image" alt="André de Carvalho">
 
@@ -194,7 +195,7 @@
 
                 </main>
 
-                <div class="info">
+                <div class="info" id="contacta-me">
                         <h1 class="info-heading">Contacta-me</h1>
                         <p class="info-text">Veja os meus melhores Projectos ja criados para mim e algumas em empresas</p>
                         <div class="info-box">
@@ -221,8 +222,8 @@
                                         </div>
 
                                         <div class="info-list-description">
-                                                <p class="info-list-text">unitel : 944783640</p>
-                                                <p class="info-list-text">movicel : 994783640 </p>
+                                                <p class="info-list-text">944783640</p>
+                                                <p class="info-list-text">994783640 </p>
                                         </div>
 
                                 </li>
@@ -233,6 +234,7 @@
                                                         <use xlink:href="icon/sprite.svg#icon-envelope"></use>
 
                                                 </svg>
+                                                
                                         </div>
                                         <div class="info-list-description">
                                                 <p class="info-list-text">geral@andrevemba.com</p>
@@ -248,8 +250,8 @@
                                                 </svg>
                                         </div>
                                         <div class="info-list-description">
-                                                <p class="info-list-text">segunda-sexta : 8 - 18</p>
-                                                <p class="info-list-text">sabado-domingos : esteje a vontade</p>
+                                                <p class="info-list-text">segunda-sexta</p>
+                                                <p class="info-list-text">sabado-domingo</p>
                                         </div>
 
                                 </li>
@@ -332,6 +334,10 @@
 
 </body>
 <script src="js/typed/typed.js"></script>
+<script src="js/smoothScrool.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+
 <script>
         var typed = new Typed('#typed', {
                 stringsElement: '#typed-strings',
