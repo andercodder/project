@@ -2,8 +2,11 @@
         .main-nav {
                 display: flex; // justify-content: space-between;
                 font-family: inherit;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
                 list-style-type: none;
-                margin-right: 8rem;
+                //margin-right: 8rem;
                 color: $color-white;
 
                 @media only screen and (max-width: $bp-small) {
@@ -15,8 +18,8 @@
                 }
 
                 & li:first-child {
-                        margin-right: auto;
-                        padding-left: 6rem;
+                      //  margin-right: auto;
+                       // padding-left: 6rem;
 
                         @media only screen and (max-width: $bp-mid-small) {
                                 padding-left: 0;
@@ -24,7 +27,8 @@
                 }
 
                 & li {
-                        margin: 1.5rem 1rem 0 1rem;
+                      // align-items: center;
+                       margin-top: 1.5rem;// 1rem 0 1rem;
 
                 }
 
@@ -85,13 +89,13 @@
                 z-index: 1;
 
                 & .main-nav li {
-                        margin-top: 1.2rem;
+                        margin-top: .6rem;
                 }
 
                 & .main-nav li a:link,
                 & .main-nav li a:visited {
                         color: #555;
-                        padding: 15px 0;
+                        padding: 10px 0;
 
                 }
 
@@ -144,6 +148,9 @@
 
 //////////////////////////////////////////////////////
 ///main class="main-about"
+h1{
+        font-family: 'Fjalla One',sans-serif;
+}
 .main {
         &-about {
                 margin-top: 4rem;
@@ -488,12 +495,25 @@
         }
 }
 
+button{
+        border: none;
+        border-color: none;
+        background: none;
+        cursor: pointer;
+        padding: 15px 40px;
+        z-index:1;
+        border-radius: 50%;
+        color: inherit;
+        font-size: 1rem;
+        text-align: center;
+        outline: none;
+}
 .btn:link,
 .btn:visited {
         font-size: .9rem;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 15px 40px;
+        padding: 1px 1px;
         display: inline-block;
         border-radius: 100px;
         transition: all .2s;
@@ -545,6 +565,7 @@
 
 ///////////////////////////////////////////////////
 //footer
+
 .footer svg:hover {
         transform: scaleY(1.05);
         fill: $color-white;
