@@ -426,7 +426,8 @@ h1 {
     margin-top: 0;
     margin-left: -60rem;
     display: block;
-    transition: all .3s; }
+    transition: all .3s;
+    color: rgba(0, 0, 0, 0.918); }
   .form__input:placeholder-shown + .form__label {
     opacity: 0;
     visibility: hidden;
@@ -544,3 +545,22 @@ footer p {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor; }
+
+.sendSms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  height: auto; }
+  .alert-danger {
+    color: rgba(255, 0, 0, 0.61); }
+  .alert-sucess {
+    color: rgba(0, 128, 0, 0.404); }

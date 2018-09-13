@@ -493,6 +493,8 @@ h1 {
                 margin-left: -60rem;
                 display: block;
                 transition: all .3s;
+                color: rgba(0, 0, 0, 0.918);
+
         }
 
         &__input:placeholder-shown+&__label {
@@ -641,4 +643,34 @@ footer p {
         stroke-width: 0;
         stroke: currentColor;
         fill: currentColor;
+}
+
+.sendSms{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.alert{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         width: 100%;
+         height: auto;
+          
+          //width: 100vh;
+          height: auto;
+         // color: $color-white;
+
+          &-danger{
+                color:rgba(255, 0, 0, 0.61);
+                  //background-color: rgba(255, 0, 0, 0.685);
+
+          }
+          &-sucess{
+                  color:rgba(0, 128, 0, 0.404);
+          }
+
 }
