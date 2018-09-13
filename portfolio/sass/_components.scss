@@ -6,7 +6,8 @@
                 align-items: center;
                 align-content: center;
                 list-style-type: none;
-                //margin-right: 8rem;
+                //margin-right: 8rem;btn
+
                 color: $color-white;
 
                 @media only screen and (max-width: $bp-small) {
@@ -18,8 +19,8 @@
                 }
 
                 & li:first-child {
-                      //  margin-right: auto;
-                       // padding-left: 6rem;
+                        //  margin-right: auto;
+                        // padding-left: 6rem;
 
                         @media only screen and (max-width: $bp-mid-small) {
                                 padding-left: 0;
@@ -27,8 +28,8 @@
                 }
 
                 & li {
-                      // align-items: center;
-                       margin-top: 1.5rem;// 1rem 0 1rem;
+                        // align-items: center;
+                        margin-top: 1.5rem; // 1rem 0 1rem;
 
                 }
 
@@ -148,9 +149,10 @@
 
 //////////////////////////////////////////////////////
 ///main class="main-about"
-h1{
-        font-family: 'Fjalla One',sans-serif;
+h1 {
+        font-family: 'Fjalla One', sans-serif;
 }
+
 .main {
         &-about {
                 margin-top: 4rem;
@@ -417,8 +419,13 @@ h1{
                         //   background-color: $color-primary-dark-blue;
                         @include icon-set;
                         fill: #fff;
-                        width: 2rem;
-                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        &-center{
+                                margin-left: .5rem;
+                        }
+                       
                 }
         }
 
@@ -495,19 +502,20 @@ h1{
         }
 }
 
-button{
+button {
         border: none;
         border-color: none;
         background: none;
         cursor: pointer;
         padding: 15px 40px;
-        z-index:1;
+        z-index: 1;
         border-radius: 50%;
         color: inherit;
         font-size: 1rem;
         text-align: center;
         outline: none;
 }
+
 .btn:link,
 .btn:visited {
         font-size: .9rem;
@@ -566,10 +574,10 @@ button{
 ///////////////////////////////////////////////////
 //footer
 
-.footer svg:hover {
+.footer .social-media svg:hover {
         transform: scaleY(1.05);
-        fill: $color-white;
-}
+        fill:$color-white;
+} 
 
 footer p {
         color: rgba(255, 255, 255, 0.671);
@@ -578,4 +586,59 @@ footer p {
         justify-content: center;
         align-items: center;
         font-weight: 50;
+}
+
+.footer-copyright {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+}
+
+.top {
+        margin-left: 60rem;
+        margin-top: -5rem;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-largest) {
+                margin-left: 55rem;
+
+        }
+
+        @media only screen and (max-width:$bp-mid-medium) {
+                margin-left: 50rem;
+        }
+
+        @media only screen and (max-width:$bp-medium) {
+                margin-left: 40rem;
+
+        }
+
+        @media only screen and (max-width:$bp-mid-small) {
+                margin-left: 30rem;
+
+        }
+
+        @media only screen and (max-width:$bp-small) {
+                margin-left:0;  
+                margin-top:-1rem;    
+        }
+
+}
+
+.btn-top {
+        background-color: $color-white;
+        color: $color-primary-dark-blue;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        }
+
+.top-icon{
+        width: 2em;
+        height: 3em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
 }

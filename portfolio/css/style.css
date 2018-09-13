@@ -46,7 +46,8 @@ h3{
   max-width: 100%;
   margin: 0 auto;
   min-height: 50rem;
-  flex: 1 0 auto; }
+  flex: 1 0 auto;
+  font-family: p; }
 
 header {
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.7), rgba(0, 0, 0, 0.7)), url("../img/4.jpg");
@@ -57,14 +58,15 @@ header {
   background-attachment: fixed; }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  /*   display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content:center;
+       */
   background-color: #2998ff;
   width: 100vw;
-  height: 40vh; }
+  height: auto; }
 
 /* .main{
         display: flex;
@@ -163,7 +165,7 @@ footer {
       fill: #2998ff; }
 
 h1 {
-  font-family: 'Fjalla One',sans-serif; }
+  font-family: 'Fjalla One', sans-serif; }
 
 .main-about {
   margin-top: 4rem;
@@ -257,7 +259,7 @@ h1 {
     padding-bottom: 0; }
     .main-skill__list-icon {
       fill: #2998ff;
-      width: 3rem; }
+      width: 2rem; }
     .main-skill__list-description {
       margin-top: -2.5rem; }
     .main-skill__list-heading {
@@ -365,10 +367,13 @@ h1 {
       border-radius: 0.5rem; }
     .info-list-icon {
       fill: #2998ff;
-      width: 3rem;
-      fill: #fff;
       width: 2rem;
-      text-align: center; }
+      fill: #fff;
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .info-list-icon-center {
+        margin-left: .5rem; }
   .info-list-description {
     color: #757575;
     margin-top: 1rem; }
@@ -488,7 +493,7 @@ button {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
-.footer svg:hover {
+.footer .social-media svg:hover {
   transform: scaleY(1.05);
   fill: #fff; }
 
@@ -499,3 +504,43 @@ footer p {
   justify-content: center;
   align-items: center;
   font-weight: 50; }
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.top {
+  margin-left: 60rem;
+  margin-top: -5rem;
+  text-align: center; }
+  @media only screen and (max-width: 87.75em) {
+    .top {
+      margin-left: 55rem; } }
+  @media only screen and (max-width: 75.75em) {
+    .top {
+      margin-left: 50rem; } }
+  @media only screen and (max-width: 69.75em) {
+    .top {
+      margin-left: 40rem; } }
+  @media only screen and (max-width: 54.75em) {
+    .top {
+      margin-left: 30rem; } }
+  @media only screen and (max-width: 48em) {
+    .top {
+      margin-left: 0;
+      margin-top: -1rem; } }
+
+.btn-top {
+  background-color: #fff;
+  color: #2998ff;
+  width: 3rem;
+  height: 3rem;
+  text-align: center; }
+
+.top-icon {
+  width: 2em;
+  height: 3em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }

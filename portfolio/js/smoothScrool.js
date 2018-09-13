@@ -1,6 +1,6 @@
 $(document).ready(function(){
   'use strict';
-    $('.main-nav__link').click(function() {
+  $('.main-nav__link, .top-link').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     || location.hostname == this.hostname) {
 
