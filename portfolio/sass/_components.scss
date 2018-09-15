@@ -599,11 +599,11 @@ footer p {
 }
 
 .top {
-        margin-left: 60rem;
+        margin-left: 85%;
         margin-top: -5rem;
         text-align: center;
 
-        @media only screen and (max-width: $bp-largest) {
+     /*    @media only screen and (max-width: $bp-largest) {
                 margin-left: 55rem;
 
         }
@@ -621,7 +621,7 @@ footer p {
                 margin-left: 30rem;
 
         }
-
+ */
         @media only screen and (max-width:$bp-small) {
                 margin-left:0;  
                 margin-top:-1rem;    

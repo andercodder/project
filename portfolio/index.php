@@ -1,5 +1,3 @@
-
-
 <?php
 /*using php to send email validation*/
 include_once 'send-email/email.php';
@@ -15,6 +13,18 @@ include_once 'send-email/email.php';
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600|Playfair+Display|Fjalla+One" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/favIcon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favIcon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favIcon/favicon-16x16.png">
+        <link rel="manifest" href="icon/favIcon/site.webmanifest">
+        <link rel="shortcut icon" href="icon/favIcon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="icon/favIcon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+
+
         <title>Andre's Portfolio</title>
 </head>
 
@@ -286,31 +296,33 @@ include_once 'send-email/email.php';
                                         <?php echo $smsErro.$smsSucesso;?>
                                 </div>
                                 <div>
-                                <form action="#" class="form" method="post">
-                                        <div class="form__group">
-                                                <input type="text" name="nome" class="form__input" placeholder="Nome" id="name"
-                                                        required>
-                                                <label for="name" class="form__label">Nome</label>
-                                        </div>
-                                        <div class="form__group">
-                                                <input type="email" name="email" class="form__input" placeholder="Email" id="email"
-                                                        required>
-                                                <label for="email" class="form__label">Email</label>
-                                        </div>
+                                        <form action="#" class="form" method="post">
+                                                <div class="form__group">
+                                                        <input type="text" name="nome" class="form__input" placeholder="Nome"
+                                                                id="name" required>
+                                                        <label for="name" class="form__label">Nome</label>
+                                                </div>
+                                                <div class="form__group">
+                                                        <input type="email" name="email" class="form__input"
+                                                                placeholder="Email" id="email" required>
+                                                        <label for="email" class="form__label">Email</label>
+                                                </div>
 
-                                        <div class="form__group">
-                                                <input type="number" name="telefone" class="form__input" placeholder="Telefone" id="telefone"
-                                                        required>
-                                                <label for="telefone" class="form__label">Telefone</label>
-                                        </div>
+                                                <div class="form__group">
+                                                        <input type="number" name="telefone" class="form__input"
+                                                                placeholder="Telefone" id="telefone" required>
+                                                        <label for="telefone" class="form__label">Telefone</label>
+                                                </div>
 
-                                        <div class="form__group">
-                                                <textarea placeholder="Mensagem" name="mensagem" class="form__input" name="message" id="message"></textarea>
-                                        </div>
+                                                <div class="form__group">
+                                                        <textarea placeholder="Mensagem" name="mensagem" class="form__input"
+                                                                name="message" id="message"></textarea>
+                                                </div>
 
-                                        <div class="form__group">
-                                                <a href="#" class="btn btn-default"><button type="submit">ENVIAR &rarr;</button></a>
-                                        </div>
+                                                <div class="form__group">
+                                                        <a href="#" class="btn btn-default"><button type="submit">ENVIAR
+                                                                        &rarr;</button></a>
+                                                </div>
                                 </div>
                                 </form>
                         </div>
@@ -321,10 +333,10 @@ include_once 'send-email/email.php';
 
                                 <div>
                                         <a href="#" class="social-media__link">
-                                                 <svg class="social-media__icon">
+                                                <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-whatsapp"></use>
-                                                </svg> 
-                                                
+                                                </svg>
+
                                         </a>
                                 </div>
 
@@ -333,25 +345,25 @@ include_once 'send-email/email.php';
                                                 <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-googleplus"></use>
                                                 </svg>
-                                               
+
 
                                         </a>
-                                      
+
                                 </div>
                                 <div>
                                         <a href="#" class="social-media__link">
-                                                   <svg class="social-media__icon">
+                                                <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-linkedin"></use>
                                                 </svg>
-                                               
+
                                         </a>
                                 </div>
                                 <div>
                                         <a href="#" class="social-media__link">
-                                                 <svg class="social-media__icon">
+                                                <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-twitter"></use>
                                                 </svg>
-                                               
+
                                         </a>
 
 
@@ -365,11 +377,11 @@ include_once 'send-email/email.php';
                                 </div>
                                 <div class="top">
                                         <a href="#top" class="btn btn-top top-link">
-                                                
+
                                                 <svg class="top-icon">
-                                                    <use xlink:href="icon/sprite.svg#icon-chevron-thin-up"></use>
+                                                        <use xlink:href="icon/sprite.svg#icon-chevron-thin-up"></use>
                                                 </svg>
-                                         </a>
+                                        </a>
 
                                 </div>
 
