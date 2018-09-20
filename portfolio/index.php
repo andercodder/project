@@ -63,11 +63,11 @@ include_once 'send-email/email.php';
                                 <p>Olá, Bem Vindo</p>
 
                                 <div id="typed-strings">
-                                        <h1>Sou o André</h1>
-                                        <h1>Web Designer & Developer</h1>
-                                        <h1>O teu site, Eu Faço</h1>
-                                        <h1>944783640
-                                                <br> 994783640</h1>
+                                        <h2>Sou o André</h2>
+                                        <h2>Web Designer & Developer</h2>
+                                        <h2>O teu site, Eu Faço</h2>
+                                        <h2>944783640
+                                                <br> 994783640</h2>
                                 </div>
                                 <span id="typed"></span>
                                 <div class="social-media">
@@ -146,7 +146,7 @@ include_once 'send-email/email.php';
                                                 <h3 class="main-skill__list-heading">Html</h3>
                                                 <p class="main-skill__list-text"> Essencial Para a marcação do teu
                                                         Website
-                                                        <a href="#" class="main-skill__list-link">certificado</a>
+                                                        <a href="cert/html.pdf" target="_blank" class="main-skill__list-link">certificado</a>
                                                 </p>
                                         </div>
 
@@ -161,7 +161,7 @@ include_once 'send-email/email.php';
                                                 <h3 class="main-skill__list-heading">css3</h3>
                                                 <p class="main-skill__list-text">Faz o teu Web site ficar lindo &
                                                         Espectacular
-                                                        <a href="#" class="main-skill__list-link">certificado</a>
+                                                        <a href="cert/css.pdf" target="_blank" class="main-skill__list-link">certificado</a>
                                                 </p>
                                         </div>
 
@@ -172,13 +172,13 @@ include_once 'send-email/email.php';
                                                 <use xlink:href="icon/sprite.svg#icon-gears"></use>
 
                                         </svg>
-                                        <div class="main-skill__list-description">
-                                                <h3 class="main-skill__list-heading">js</h3>
-                                                <p class="main-skill__list-text">Torna o teu site em uma WebApp com
-                                                        funcionalidades
-                                                        <a href="#" class="main-skill__list-link">certificado</a>
-                                                </p>
-                                        </div>
+                                <div class="main-skill__list-description">
+                                        <h3 class="main-skill__list-heading">js</h3>
+                                        <p class="main-skill__list-text">Torna o teu site em uma WebApp
+
+                                                <a href="cert/webdev.pdf" target="_blank" class="main-skill__list-link">certificado</a>
+                                        </p>
+                                </div>
 
                                 </li>
 
@@ -189,9 +189,9 @@ include_once 'send-email/email.php';
                                         </svg>
                                         <div class="main-skill__list-description">
                                                 <h3 class="main-skill__list-heading">php</h3>
-                                                <p class="main-skill__list-text">Faz o teu site ficar dinamico,
-                                                        poderoso e cria Blogs
-                                                        <a href="#" class="main-skill__list-text__link">certificado</a>
+                                                <p class="main-skill__list-text">Faz o teu site ficar dinamico
+                                                        
+                                                        <a href="cert/webdev.pdf" target="_blank" class="main-skill__list-text__link">certificado</a>
                                                 </p>
                                         </div>
 
@@ -207,16 +207,16 @@ include_once 'send-email/email.php';
 
 
                                 <div class="project-box">
-                                        <img src="img/outdoors.png" alt="Imagem do Projecto" class="project-box__image">
+                                       <a href="projects/natours/" target="_blank" > <img src="img/outdoors.png" alt="Imagem do Projecto" class="project-box__image"></a>
 
 
 
-                                        <img src="img/trillo.png" alt="Imagem do Projecto" class="project-box__image">
+                                       <a href="projects/trillo/" target="_blank"> <img src="img/trillo.png" alt="Imagem do Projecto" class="project-box__image"></a>
 
 
 
 
-                                        <img src="img/nexter.png" alt="Imagem do Projecto" class="project-box__image">
+                                       <a href="projects/nexter/" target="_blank"> <img src="img/nexter.png" alt="Imagem do Projecto" class="project-box__image"></a>
 
 
                                 </div>
@@ -226,7 +226,8 @@ include_once 'send-email/email.php';
 
                 <div class="info" id="contacta-me">
                         <h1 class="info-heading">Contacta-me</h1>
-                        <p class="info-text">Veja os meus melhores Projectos ja criados para mim e algumas em empresas</p>
+                        <p class="info-text">Se tiver alguma pergunta ou desejar que eu faça uma pagina web para si ou para o seu negocio<br> Por Favor não hesite em
+                        ligar para mi, enviar uma mensagem para o meu telefone ou email</p>
                         <div class="info-box">
                                 <li class="info-list">
                                         <div class="info-list-box-icon">
