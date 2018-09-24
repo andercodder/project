@@ -108,7 +108,7 @@ include_once 'send-email/email.php';
                 <main class="main">
                         <div class="main-about js--main-about">
                                 <div class="main-about__box">
-                                        <img src="img/my_image_body.jpg" class="main-about__image" alt="André de Carvalho">
+                                        <img src="img/my_image.jpg" class="main-about__image" alt="André de Carvalho">
 
                                 </div>
 
@@ -290,14 +290,14 @@ include_once 'send-email/email.php';
 
 
                 </div>
-                <section class="section-book">
+                <section class="section-book" id="form">
                         <div class="book__form">
 
                                 <div class="sendSms">
                                         <?php echo $smsErro.$smsSucesso;?>
                                 </div>
                                 <div>
-                                        <form action="#" class="form" method="post">
+                                        <form action="index.php?#contacta-me" class="form" method="post">
                                                 <div class="form__group">
                                                         <input type="text" name="nome" class="form__input" placeholder="Nome"
                                                                 id="name" required>
@@ -321,7 +321,7 @@ include_once 'send-email/email.php';
                                                 </div>
 
                                                 <div class="form__group">
-                                                        <a href="#" class="btn btn-default"><button type="submit">ENVIAR
+                                                        <a href="#form" class="btn btn-default"><button type="submit">ENVIAR
                                                                         &rarr;</button></a>
                                                 </div>
                                 </div>
@@ -374,7 +374,7 @@ include_once 'send-email/email.php';
                         <div class="footer-copyright">
                                 <div class="footer-text">
                                         <p>André de Carvalho</p>
-                                        <p>&copy;Todos os Direitos Reservados 2018</p>
+                                        <p>&copy;2018 Todos os Direitos Reservados</p>
                                 </div>
                                 <div class="top">
                                         <a href="#top" class="btn btn-top top-link">

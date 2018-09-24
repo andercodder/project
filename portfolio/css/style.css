@@ -42,6 +42,9 @@ h2{
 h3{
         font-size: 110%;
 } */
+::selection {
+  background-color: #2998ff; }
+
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -144,6 +147,9 @@ footer {
     text-align: center;
     width: 100%;
     transform: translate(0, -50%); }
+    @media only screen and (max-width: 75.75em) {
+      .header .hero-text__box {
+        top: 70%; } }
     .header .hero-text__box p {
       font-size: 1rem;
       display: flex;
@@ -221,8 +227,8 @@ h1 {
     margin-left: 6rem; }
     @media only screen and (max-width: 54.75em) {
       .main-about__image {
-        width: 12rem;
-        height: 12rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 10rem;
         margin: 0; } }
   .main-about__description {

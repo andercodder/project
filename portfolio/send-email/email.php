@@ -20,7 +20,9 @@ if ($_POST) {
     }
   //verificar se Existem erros na variavel erro
     if ($smsErro != "") {
-        $smsErro = '<div class="alert alert-danger"><p>Existem erros no seu formulario, corriga-os e tente de novo</p>' . $smsErro . '<div>';
+        $smsErro = '<div class="alert alert-danger sendSms"><p>Existem erros no seu formulario, corriga-os e tente de novo</p>' . $smsErro . '<div>';
+        //header("Location:../index.php?#form");
+    
     }
   /*se a conexão estiver boa enviar o email */
     else {
@@ -31,12 +33,17 @@ if ($_POST) {
         $subject = "Mensagem da minha pagina Portfolio " . $_POST['mensagem'];
         $mailBody = "Dados do cliente: $nome\n$telefone\n";
         if (mail($emailTo, $headers, $mailBody, $subject)) {
+            
+            //http://localhost/project/portfolio/
 
-            $smsSucesso = '<div class="alert alert-success>
+            $smsSucesso = '<div class="alert alert-success sendSms>
       <strong>A sua mensagem foi enviada com sucesso</strong>
       </div>';
+          // header("Location:index.php?#form");
         } else {
-            $smsErro = '<div class=alert alert-danger>A sua mensagem não pode ser enviada <strong>Tente Novamente</strong> </div>';
+            $smsErro = '<div class=alert alert-danger sendSms>A sua mensagem não pode ser enviada <strong>Tente Novamente</strong> </div>';
+          //  header("Location:index.php?#form");
+
         }
     }
 }
