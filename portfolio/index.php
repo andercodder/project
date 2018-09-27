@@ -34,7 +34,7 @@ include_once 'send-email/email.php';
                         <nav>
                                 <ul class="main-nav">
                                         <li class="main-nav__logo">
-                                                <a href="#" class="">
+                                                <a href="#" class="main-nav__logo-image">
                                                         <img src="img/my_image_pass.jpg" class="main-nav__logo-image"
                                                                 alt="logotipo"> </a>
                                                 <p class="main-nav__logo-text"></p>
@@ -172,13 +172,13 @@ include_once 'send-email/email.php';
                                                 <use xlink:href="icon/sprite.svg#icon-gears"></use>
 
                                         </svg>
-                                <div class="main-skill__list-description">
-                                        <h3 class="main-skill__list-heading">js</h3>
-                                        <p class="main-skill__list-text">Torna o teu site em uma WebApp
+                                        <div class="main-skill__list-description">
+                                                <h3 class="main-skill__list-heading">js</h3>
+                                                <p class="main-skill__list-text">Torna o teu site em uma WebApp
 
-                                                <a href="cert/webdev.pdf" target="_blank" class="main-skill__list-link">certificado</a>
-                                        </p>
-                                </div>
+                                                        <a href="cert/webdev.pdf" target="_blank" class="main-skill__list-link">certificado</a>
+                                                </p>
+                                        </div>
 
                                 </li>
 
@@ -190,7 +190,7 @@ include_once 'send-email/email.php';
                                         <div class="main-skill__list-description">
                                                 <h3 class="main-skill__list-heading">php</h3>
                                                 <p class="main-skill__list-text">Faz o teu site ficar dinamico
-                                                        
+
                                                         <a href="cert/webdev.pdf" target="_blank" class="main-skill__list-text__link">certificado</a>
                                                 </p>
                                         </div>
@@ -202,21 +202,23 @@ include_once 'send-email/email.php';
 
                         <div class="project">
                                 <h1 class="project-heading">Projectos</h1>
-                                <p class="project-text">Veja os meus melhores Projectos já criados para mim e algumas
-                                        em empresas</p>
+                                <p class="project-text">Meus Projectos de Estudo...De uma Olhada</p>
 
 
                                 <div class="project-box">
-                                       <a href="projects/natours/" target="_blank" > <img src="img/outdoors.png" alt="Imagem do Projecto" class="project-box__image"></a>
+                                        <a href="projects/natours/" target="_blank"> <img src="img/outdoors.png" alt="Imagem do Projecto"
+                                                        class="project-box__image"></a>
 
 
 
-                                       <a href="projects/trillo/" target="_blank"> <img src="img/trillo.png" alt="Imagem do Projecto" class="project-box__image"></a>
+                                        <a href="projects/trillo/" target="_blank"> <img src="img/trillo.png" alt="Imagem do Projecto"
+                                                        class="project-box__image"></a>
 
 
 
 
-                                       <a href="projects/nexter/" target="_blank"> <img src="img/nexter.png" alt="Imagem do Projecto" class="project-box__image"></a>
+                                        <a href="projects/nexter/" target="_blank"> <img src="img/nexter.png" alt="Imagem do Projecto"
+                                                        class="project-box__image"></a>
 
 
                                 </div>
@@ -226,8 +228,7 @@ include_once 'send-email/email.php';
 
                 <div class="info" id="contacta-me">
                         <h1 class="info-heading">Contacta-me</h1>
-                        <p class="info-text">Se tiver alguma pergunta ou desejar que eu faça uma pagina web para si ou para o seu negocio<br> Por Favor não hesite em
-                        ligar para mi, enviar uma mensagem para o meu telefone ou email</p>
+                        <p class="info-text">Se Quiser um conselho para melhorar o seu Negócio Contacta-me...</p>
                         <div class="info-box">
                                 <li class="info-list">
                                         <div class="info-list-box-icon">
@@ -267,8 +268,9 @@ include_once 'send-email/email.php';
 
                                         </div>
                                         <div class="info-list-description">
+                                                <p class="info-list-text">andre@andrevemba.com</p>
                                                 <p class="info-list-text">geral@andrevemba.com</p>
-                                                <p class="info-list-text"> andrevmc1000@hotmail.com</p>
+
                                         </div>
 
                                 </li>
@@ -294,8 +296,18 @@ include_once 'send-email/email.php';
                         <div class="book__form">
 
                                 <div class="sendSms">
-                                        <?php echo $smsErro.$smsSucesso;?>
+                                        <?php echo $smsSucesso;?>
                                 </div>
+                                <div class="sendSms">
+                                        <?php echo $smsErro;?>
+                                </div>
+
+
+                                <div>
+
+                                </div>
+
+
                                 <div>
                                         <form action="index.php?#contacta-me" class="form" method="post">
                                                 <div class="form__group">
