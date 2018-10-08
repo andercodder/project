@@ -23,6 +23,11 @@ include_once 'send-email/email.php';
         <meta name="msapplication-config" content="icon/favIcon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
+        <!-- SEO Basic -->
+         <meta name="description" content="portfolio, programador, criacao de paginas web, criador de paginas web com html, html5, css, javascript, jquery e bootstrap">
+         <meta name="keywords" content="web site, pagina, internet,online,marketing, programador, programacao, informatica, negocio">
+
+
 
 
         <title>Andre's Portfolio</title>
@@ -72,7 +77,7 @@ include_once 'send-email/email.php';
                                 <span id="typed"></span>
                                 <div class="social-media">
                                         <div>
-                                                <a href="#" class="social-media__link">
+                                                <a href="tel:+244 944783640" class="social-media__link">
                                                         <svg class="social-media__icon">
                                                                 <use xlink:href="icon/sprite.svg#icon-whatsapp"></use>
                                                         </svg>
@@ -80,21 +85,21 @@ include_once 'send-email/email.php';
                                         </div>
 
                                         <div>
-                                                <a href="#" class="social-media__link">
+                                                <a href="https://plus.google.com/u/0/+andredecarvalho" class="social-media__link">
                                                         <svg class="social-media__icon">
                                                                 <use xlink:href="icon/sprite.svg#icon-googleplus"></use>
                                                         </svg>
                                                 </a>
                                         </div>
                                         <div>
-                                                <a href="#" class="social-media__link">
+                                                <a href="https://www.linkedin.com/in/andre-carvalho-504979104/" class="social-media__link">
                                                         <svg class="social-media__icon">
                                                                 <use xlink:href="icon/sprite.svg#icon-linkedin"></use>
                                                         </svg>
                                                 </a>
                                         </div>
                                         <div>
-                                                <a href="#" class="social-media__link">
+                                                <a href="https://twitter.com/andre_de_carv" class="social-media__link">
                                                         <svg class="social-media__icon">
                                                                 <use xlink:href="icon/sprite.svg#icon-twitter"></use>
                                                         </svg>
@@ -113,7 +118,7 @@ include_once 'send-email/email.php';
                                 </div>
 
                                 <div class="main-about__box">
-                                        <h1>Sobre Mi</h1>
+                                        <h1>Sobre Mim</h1>
                                         <p class="main-about__description">Olá, Eu sou o André Vemba um programador
                                                 web, formado em Informatica que sempre foi
                                                 a minha grande paixão por todos esses anos. Tenho a intenção de cada
@@ -128,7 +133,7 @@ include_once 'send-email/email.php';
                                                 maior habilidade é a capacidade de aprender coisas novas muito rapido.
                                                 No
                                                 meu Trabalho dou o melhor de mim tento sempre executar com
-                                                professionalismo
+                                                profissionalismo
                                                 e amor.</p>
 
                                 </div>
@@ -296,13 +301,9 @@ include_once 'send-email/email.php';
                         <div class="book__form">
 
                                 <div class="sendSms">
-                                        <?php echo $smsSucesso;?>
+                                        <?php echo $smsErro .$smsSucesso;?>
                                 </div>
-                                <div class="sendSms">
-                                        <?php echo $smsErro;?>
-                                </div>
-
-
+                                
                                 <div>
 
                                 </div>
@@ -345,7 +346,7 @@ include_once 'send-email/email.php';
                         <div class="social-media">
 
                                 <div>
-                                        <a href="#" class="social-media__link">
+                                        <a href="tel:+244 944783640" class="social-media__link">
                                                 <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-whatsapp"></use>
                                                 </svg>
@@ -354,7 +355,7 @@ include_once 'send-email/email.php';
                                 </div>
 
                                 <div>
-                                        <a href="#" class="social-media__link">
+                                        <a href="https://plus.google.com/u/0/+andredecarvalho" class="social-media__link">
                                                 <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-googleplus"></use>
                                                 </svg>
@@ -364,7 +365,7 @@ include_once 'send-email/email.php';
 
                                 </div>
                                 <div>
-                                        <a href="#" class="social-media__link">
+                                        <a href="https://www.linkedin.com/in/andre-carvalho-504979104/" class="social-media__link">
                                                 <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-linkedin"></use>
                                                 </svg>
@@ -372,7 +373,7 @@ include_once 'send-email/email.php';
                                         </a>
                                 </div>
                                 <div>
-                                        <a href="#" class="social-media__link">
+                                        <a href="https://twitter.com/andre_de_carv" class="social-media__link">
                                                 <svg class="social-media__icon">
                                                         <use xlink:href="icon/sprite.svg#icon-twitter"></use>
                                                 </svg>
@@ -385,7 +386,7 @@ include_once 'send-email/email.php';
                         </div>
                         <div class="footer-copyright">
                                 <div class="footer-text">
-                                        <p>André de Carvalho</p>
+                                        <p>André de Carvalho: +244 944783640</p>
                                         <p>&copy;2018 Todos os Direitos Reservados</p>
                                 </div>
                                 <div class="top">
@@ -422,5 +423,15 @@ include_once 'send-email/email.php';
                 //loop: true
         });
 </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126573405-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126573405-1');
+</script>
+
 
 </html>

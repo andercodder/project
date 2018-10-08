@@ -21,28 +21,25 @@ if ($_POST) {
   //verificar se Existem erros na variavel erro
     if ($smsErro != "") {
         $smsErro = '<div class="alert alert-danger"><p>Existem erros no seu formulario, corriga-os e tente de novo</p>' . $smsErro . '<div>';
-        //header("Location:../index.php?#form");
+        
     
     }
   /*se a conexão estiver boa enviar o email */
     else {
-        $emailTo = "geral@andrevemba.com,andre@andrevemba.com,andrevmc1000@hotmail.com";
+        $emailTo = "geral@andrevemba.com";
         $nome = $_POST['nome'];
         $headers = "From:" . $_POST['email'];
-        $telefone = " Numero de Telefone do visitante da pagina.: " . $_POST['nome'] . " : " . $_POST['numeroDeTelefone'];
+        $telefone = " Numero de Telefone do visitante da pagina.: " . $_POST['nome'] . " : " . $_POST['telefone'];
         $subject = "Mensagem da minha pagina Portfolio " . $_POST['mensagem'];
         $mailBody = "Dados do cliente: $nome\n$telefone\n";
         if (mail($emailTo, $headers, $mailBody, $subject)) {
             
-            //http://localhost/project/portfolio/
-
-            $smsSucesso = '<div class="alert alert-success >
-      <strong>A sua mensagem foi enviada com sucesso</strong>
-      </div>';
-          // header("Location:index.php?#form");
+            $smsSucesso = '<div class="alert alert-success">
+                <strong>A sua mensagem foi enviada com sucesso</strong></div>';
+        
         } else {
-            $smsErro = '<div class=alert alert-danger>A sua mensagem não pode ser enviada <strong>Tente Novamente</strong> </div>';
-          //  header("Location:index.php?#form");
+            $smsErro = '<div class="alert alert-danger">A sua mensagem não pode ser enviada <strong>Tente Novamente</strong> </div>';
+          
 
         }
     }
